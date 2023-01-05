@@ -1,6 +1,7 @@
 package com.example.win26.fragments
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -30,6 +31,7 @@ class WriteBankFragment : DialogFragment() {
             if (bankSum.text.isNotEmpty()){
                 setPrefBank(bankSum.text.toString())
                 startActivity(Intent(requireContext(), MainActivity::class.java))
+                requireActivity().finish()
             }
         }
     }
@@ -40,4 +42,10 @@ class WriteBankFragment : DialogFragment() {
             putString("bank", sum)
         }
     }
+
+    override fun onDismiss(dialog: DialogInterface) {
+        super.onDismiss(dialog)
+        requireActivity().startActivity(Intent(context, MainActivity::class.java))
+    }
+
 }

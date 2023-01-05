@@ -37,6 +37,7 @@ class SettingFragment : Fragment() {
                 roomDatabase.betDao().deleteDatabase()
                 launch(Dispatchers.Main){
                     requireActivity().startActivity(Intent(context, MainActivity::class.java))
+                    requireActivity().finish()
                 }
             }
         }

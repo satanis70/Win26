@@ -1,6 +1,7 @@
 package com.example.win26.fragments
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.win26.MainActivity
 import com.example.win26.R
 import com.example.win26.adapter.RecyclerAdapter
 import com.example.win26.model.BetModel
