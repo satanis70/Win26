@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_total_amount">" Enter bank amount"</string>
+    <string name="validate">Validate</string>
+    <string name="enter_the_name_of_the_bet">Enter the name of the bet</string>
+    <string name="enter_betting_odd">Enter betting odd</string>
+    <string name="enter_bet_ammount">Enter bet ammount</string>
+    <string name="clear_data">Clear data</string>
+</resources>
